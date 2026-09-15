@@ -7,15 +7,28 @@ body {
 }
 
 .container {
-    margin: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    margin: 0 auto;
     background-color: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 10px solid #04e61bd6;
 }
 
 h1 {
     color: #2c3e50;
+}
+
+#p1 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    background-color: hwb(231 0% 0% / 0.277);
+    border-width: 10px;
+    border-style: solid;
+    border-color: hsla(0, 97%, 46%, 0.839);
 }
 
 .imagen {
@@ -32,4 +45,16 @@ h1 {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.container2 {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+#b1:hover {
+    background-color: hsl(183, 85%, 46%);
 }
