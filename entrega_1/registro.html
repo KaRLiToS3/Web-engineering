@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Central | Registro</title>
+    <link rel="stylesheet" href="css/comun.css">
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+
+    <header class="cabecera">
+        <a class="logo" href="index.html">Biblioteca Central</a>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="prestamos.html">Préstamos</a>
+            <a href="login.html">Entrar</a>
+            <a href="registro.html" class="boton-menu activo">Registrarse</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <section class="caja-formulario">
+            <h1>Crear cuenta</h1>
+            <p class="intro">Rellena el formulario para obtener tu carné de la biblioteca.</p>
+
+            <form>
+                <div class="dos-columnas">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ana">
+                    </div>
+                    <div class="campo">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="García López">
+                    </div>
+                </div>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="nombre@correo.com">
+
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" placeholder="12345678A">
+
+                <div class="dos-columnas">
+                    <div class="campo">
+                        <label for="clave">Contraseña</label>
+                        <input type="password" id="clave" name="clave" placeholder="••••••••">
+                    </div>
+                    <div class="campo">
+                        <label for="clave2">Repetir contraseña</label>
+                        <input type="password" id="clave2" name="clave2" placeholder="••••••••">
+                    </div>
+                </div>
+
+                <label for="sede">Sede habitual</label>
+                <select id="sede" name="sede">
+                    <option value="centro">Sede Centro</option>
+                    <option value="norte">Sede Norte</option>
+                    <option value="sur">Sede Sur</option>
+                </select>
+
+                <label class="condiciones">
+                    <input type="checkbox" name="condiciones"> Acepto las condiciones de uso del servicio de préstamo.
+                </label>
+
+                <button type="submit">Crear cuenta</button>
+            </form>
+
+            <p class="alternativa">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <p>Biblioteca Central — Calle Mayor 1, Madrid</p>
+        <nav class="menu-pie">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="prestamos.html">Préstamos</a>
+        </nav>
+        <p class="aviso">Proyecto de prácticas — Entrega 1</p>
+    </footer>
+
+</body>
+</html>

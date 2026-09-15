@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Central | Entrar</title>
+    <link rel="stylesheet" href="css/comun.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <header class="cabecera">
+        <a class="logo" href="index.html">Biblioteca Central</a>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="prestamos.html">Préstamos</a>
+            <a href="login.html" class="activo">Entrar</a>
+            <a href="registro.html" class="boton-menu">Registrarse</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <section class="caja-formulario">
+            <h1>Iniciar sesión</h1>
+            <p class="intro">Accede con tu cuenta de la biblioteca.</p>
+
+            <form>
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="nombre@correo.com">
+
+                <label for="clave">Contraseña</label>
+                <input type="password" id="clave" name="clave" placeholder="••••••••">
+
+                <div class="fila">
+                    <label class="recordar">
+                        <input type="checkbox" name="recordar"> Recordarme
+                    </label>
+                    <a href="#">¿Olvidaste la contraseña?</a>
+                </div>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <p class="alternativa">¿Todavía no tienes cuenta? <a href="registro.html">Regístrate aquí</a></p>
+        </section>
+
+    </main>
+
+    <footer class="pie">
+        <p>Biblioteca Central — Calle Mayor 1, Madrid</p>
+        <nav class="menu-pie">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="prestamos.html">Préstamos</a>
+        </nav>
+        <p class="aviso">Proyecto de prácticas — Entrega 1</p>
+    </footer>
+
+</body>
+</html>
