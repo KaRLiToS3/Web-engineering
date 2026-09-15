@@ -1,0 +1,74 @@
+/* index.css — estilos propios de la página de inicio */
+
+.portada {
+    background-color: #ffffff;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 40px 32px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.portada h1 {
+    margin: 0 0 12px;
+    font-size: 34px;
+    color: var(--color-principal-oscuro);
+}
+
+.portada p {
+    margin: 0 auto 24px;
+    max-width: 520px;
+    color: var(--color-texto-suave);
+}
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.servicios h2,
+.novedades h2 {
+    margin-bottom: 16px;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.tarjeta {
+    flex: 1 1 260px;
+    background-color: #ffffff;
+    border: 1px solid var(--color-borde);
+    border-top: 3px solid var(--color-principal);
+    border-radius: var(--radio);
+    padding: 20px;
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+}
+
+.tarjeta p {
+    color: var(--color-texto-suave);
+}
+
+.novedades {
+    margin-top: 32px;
+    background-color: #ffffff;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 20px 24px;
+}
+
+.novedades ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.novedades li {
+    padding: 6px 0;
+}

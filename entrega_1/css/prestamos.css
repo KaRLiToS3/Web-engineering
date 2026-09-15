@@ -1,0 +1,118 @@
+/* prestamos.css — estilos propios de la página de préstamos */
+
+.resumen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.dato {
+    flex: 1 1 160px;
+    background-color: #ffffff;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 18px;
+    text-align: center;
+}
+
+.dato .numero {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-principal);
+}
+
+.dato .etiqueta {
+    font-size: 14px;
+    color: var(--color-texto-suave);
+}
+
+.tabla-prestamos {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.tabla-prestamos th {
+    text-align: left;
+    padding: 12px 14px;
+    background-color: #eef2ff;
+    color: var(--color-principal-oscuro);
+    font-size: 14px;
+}
+
+.tabla-prestamos td {
+    padding: 12px 14px;
+    border-top: 1px solid var(--color-borde);
+}
+
+.estado {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+}
+
+.estado.en-plazo {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.estado.por-vencer {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.solicitud {
+    background-color: #ffffff;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 24px;
+}
+
+.solicitud h2 {
+    margin-top: 0;
+}
+
+.solicitud form {
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+}
+
+.solicitud label {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.solicitud input,
+.solicitud select,
+.solicitud textarea {
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.solicitud button {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: var(--radio);
+    background-color: var(--color-principal);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.solicitud button:hover {
+    background-color: var(--color-principal-oscuro);
+}

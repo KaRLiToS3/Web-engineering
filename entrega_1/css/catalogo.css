@@ -1,0 +1,93 @@
+/* catalogo.css — estilos propios de la página de catálogo */
+
+.buscador {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.buscador label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.buscador input,
+.buscador select {
+    padding: 8px 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    font-size: 14px;
+}
+
+.buscador input {
+    flex: 1 1 220px;
+}
+
+.buscador button {
+    padding: 9px 20px;
+    border: none;
+    border-radius: var(--radio);
+    background-color: var(--color-principal);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buscador button:hover {
+    background-color: var(--color-principal-oscuro);
+}
+
+.tabla-libros {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    overflow: hidden;
+}
+
+.tabla-libros th {
+    text-align: left;
+    padding: 12px 14px;
+    background-color: #eef2ff;
+    color: var(--color-principal-oscuro);
+    font-size: 14px;
+}
+
+.tabla-libros td {
+    padding: 12px 14px;
+    border-top: 1px solid var(--color-borde);
+}
+
+.tabla-libros tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.estado {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+}
+
+.estado.libre {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.estado.ocupado {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+.nota {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--color-texto-suave);
+}

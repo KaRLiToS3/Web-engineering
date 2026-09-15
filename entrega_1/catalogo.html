@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Central | Catálogo</title>
+    <link rel="stylesheet" href="css/comun.css">
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+
+    <header class="cabecera">
+        <a class="logo" href="index.html">Biblioteca Central</a>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html" class="activo">Catálogo</a>
+            <a href="prestamos.html">Préstamos</a>
+            <a href="login.html">Entrar</a>
+            <a href="registro.html" class="boton-menu">Registrarse</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <h1>Catálogo</h1>
+        <p class="intro">Estos son los libros disponibles en la biblioteca.</p>
+
+        <form class="buscador">
+            <label for="busqueda">Buscar</label>
+            <input type="text" id="busqueda" name="busqueda" placeholder="Título o autor">
+
+            <label for="genero">Género</label>
+            <select id="genero" name="genero">
+                <option value="todos">Todos</option>
+                <option value="novela">Novela</option>
+                <option value="fantasia">Fantasía</option>
+                <option value="ciencia">Ciencia ficción</option>
+            </select>
+
+            <button type="submit">Buscar</button>
+        </form>
+
+        <table class="tabla-libros">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Autor</th>
+                    <th>Género</th>
+                    <th>Año</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>El nombre del viento</td>
+                    <td>Patrick Rothfuss</td>
+                    <td>Fantasía</td>
+                    <td>2007</td>
+                    <td><span class="estado libre">Disponible</span></td>
+                </tr>
+                <tr>
+                    <td>Cien años de soledad</td>
+                    <td>Gabriel García Márquez</td>
+                    <td>Novela</td>
+                    <td>1967</td>
+                    <td><span class="estado libre">Disponible</span></td>
+                </tr>
+                <tr>
+                    <td>Fahrenheit 451</td>
+                    <td>Ray Bradbury</td>
+                    <td>Ciencia ficción</td>
+                    <td>1953</td>
+                    <td><span class="estado ocupado">Prestado</span></td>
+                </tr>
+                <tr>
+                    <td>La sombra del viento</td>
+                    <td>Carlos Ruiz Zafón</td>
+                    <td>Novela</td>
+                    <td>2001</td>
+                    <td><span class="estado libre">Disponible</span></td>
+                </tr>
+                <tr>
+                    <td>Dune</td>
+                    <td>Frank Herbert</td>
+                    <td>Ciencia ficción</td>
+                    <td>1965</td>
+                    <td><span class="estado ocupado">Prestado</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="nota">Para reservar un ejemplar debes <a href="login.html">iniciar sesión</a>.</p>
+
+    </main>
+
+    <footer class="pie">
+        <p>Biblioteca Central — Calle Mayor 1, Madrid</p>
+        <nav class="menu-pie">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="prestamos.html">Préstamos</a>
+        </nav>
+        <p class="aviso">Proyecto de prácticas — Entrega 1</p>
+    </footer>
+
+</body>
+</html>

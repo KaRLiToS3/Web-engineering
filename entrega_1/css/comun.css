@@ -1,0 +1,179 @@
+/* ============================================================
+   comun.css — estilos compartidos por todas las páginas:
+   base, cabecera (header) y pie (footer).
+   ============================================================ */
+
+:root {
+    --color-principal: #1d4ed8;
+    --color-principal-oscuro: #1e3a8a;
+    --color-texto: #1f2937;
+    --color-texto-suave: #6b7280;
+    --color-fondo: #f5f7fa;
+    --color-blanco: #ffffff;
+    --color-borde: #e5e7eb;
+    --radio: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    line-height: 1.25;
+}
+
+a {
+    color: var(--color-principal);
+}
+
+/* ---------- Cabecera ---------- */
+
+.cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 32px;
+    background-color: var(--color-blanco);
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-principal-oscuro);
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu a {
+    padding: 8px 14px;
+    border-radius: var(--radio);
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: var(--color-fondo);
+}
+
+.menu a.activo {
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.menu a.boton-menu {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+.menu a.boton-menu:hover {
+    background-color: var(--color-principal-oscuro);
+}
+
+/* ---------- Contenido ---------- */
+
+.contenido {
+    flex: 1;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.intro {
+    color: var(--color-texto-suave);
+    margin-top: 0;
+}
+
+/* ---------- Botones generales ---------- */
+
+.boton {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: var(--radio);
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: var(--color-principal-oscuro);
+}
+
+.boton.secundario {
+    background-color: var(--color-blanco);
+    color: var(--color-principal);
+    border: 1px solid var(--color-principal);
+}
+
+.boton.secundario:hover {
+    background-color: #eef2ff;
+}
+
+/* ---------- Pie ---------- */
+
+.pie {
+    padding: 24px 32px;
+    background-color: var(--color-principal-oscuro);
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+.pie p {
+    margin: 6px 0;
+}
+
+.menu-pie {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 10px 0;
+}
+
+.menu-pie a {
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
+.menu-pie a:hover {
+    text-decoration: underline;
+}
+
+.pie .aviso {
+    font-size: 13px;
+    color: #c7d2fe;
+}
+
+/* ---------- Móvil ---------- */
+
+@media (max-width: 700px) {
+    .cabecera {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+
+    .contenido {
+        padding: 20px 16px;
+    }
+}

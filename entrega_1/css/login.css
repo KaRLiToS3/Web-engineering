@@ -1,0 +1,76 @@
+/* login.css — estilos propios de la página de inicio de sesión */
+
+.caja-formulario {
+    max-width: 420px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    padding: 32px;
+}
+
+.caja-formulario h1 {
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.caja-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.caja-formulario label {
+    margin-top: 14px;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.caja-formulario input[type="email"],
+.caja-formulario input[type="password"] {
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio);
+    font-size: 14px;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.caja-formulario label.recordar {
+    margin: 0;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.caja-formulario button {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: var(--radio);
+    background-color: var(--color-principal);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.caja-formulario button:hover {
+    background-color: var(--color-principal-oscuro);
+}
+
+.alternativa {
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-texto-suave);
+}
