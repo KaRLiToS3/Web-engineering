@@ -21,6 +21,13 @@
     color: var(--color-texto-suave);
 }
 
+.imagen-portada {
+    display: block;
+    width: 100%;
+    margin: 0 auto 32px;
+    border-radius: var(--radio);
+}
+
 .acciones {
     display: flex;
     justify-content: center;

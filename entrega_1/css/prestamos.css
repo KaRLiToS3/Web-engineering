@@ -7,6 +7,17 @@
     margin-bottom: 32px;
 }
 
+.resumen h1 {
+    flex-basis: 100%;
+    margin-bottom: 0px;
+}
+
+.resumen .intro {
+    flex-basis: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 .dato {
     flex: 1 1 160px;
     background-color: #ffffff;
@@ -72,6 +83,8 @@
     background-color: #ffffff;
     border: 1px solid var(--color-borde);
     border-radius: var(--radio);
+    max-width: 460px;
+    margin: 0 auto;
     padding: 24px;
 }
 
@@ -82,7 +95,6 @@
 .solicitud form {
     display: flex;
     flex-direction: column;
-    max-width: 420px;
 }
 
 .solicitud label {
